@@ -1,2 +1,2 @@
-web: python3 web_crypto.py
+web: gunicorn web_crypto.py:app
 
