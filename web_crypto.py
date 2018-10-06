@@ -1,4 +1,4 @@
-import rsa
+from rsa import *
 import urllib.request
 import base64
 from flask import Flask
@@ -21,8 +21,7 @@ def get_signed_text(st):
     return st+'\n' + str((rsa.sign_hash(rsa.compute_hash(st.encode("utf-8"),"SHA-256"),get_private_key(),"SHA-256")))
     # return st+'\n' + str(base64.b64encode(rsa.sign_hash(rsa.compute_hash(st.encode("utf-8"),"SHA-256"),get_private_key(),"SHA-256")))
 
-import urllib.request
 @app.route('/<id>')
 def get_output(id):
-    # show the user profile for that user
     return str(is_valid_text(urllib.request.urlopen("https://raw.githubusercontent.com/rjhunjhunwala/SecurID/master/"+id).read().decode("utf-8")))
+
