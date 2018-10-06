@@ -25,5 +25,7 @@ def get_signed_text(st):
 
 @app.route('/<id>')
 def get_output(id):
-    return str(is_valid_text(urllib.request.urlopen("https://raw.githubusercontent.com/rjhunjhunwala/SecurID/master/"+id).read().decode("utf-8")))
-
+    try:
+        return str(is_valid_text(urllib.request.urlopen("https://raw.githubusercontent.com/rjhunjhunwala/SecurID/master/"+id).read().decode("utf-8")))
+    except Exception as e:
+        return str("Hello, World!"+str(e))
