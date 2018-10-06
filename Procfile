@@ -1,2 +1,2 @@
-web: gunicorn web_crypto:app
+gunicorn web_crypto:app
 
