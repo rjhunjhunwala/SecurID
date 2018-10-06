@@ -1,7 +1,5 @@
-import sys
-import hashlib
-from rsa import *
 import rsa
+import urllib.request
 import base64
 from flask import Flask
 
