@@ -1,36 +1,32 @@
+f#!flask/bin/python
+from flask import Flask, jsonify
 from random import randint
-from flask import Flask
-from flask import jsonify
-from flask_restful import Resource, Api
-
 app = Flask(__name__)
-api = Api(app)
 
-class HelloWorld(Resource):
-    def get(self):
-        return get_output()
-
-api.add_resource(HelloWorld, '/')
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-"""
-{
-	"actions": [
-		{
-			"say": "Couldn't understand, please repeat the question"
-		},
-		{
-			"listen": true
-		}
-	]
-}
-"""
 def get_joke():
     jokes = open("jokes.txt", "r")
     jokes = jokes.readlines()
     return jokes[randint(0,len(jokes)-1)]
+
+task = {
+	"actions": [
+		{
+			"say": get_joke()
+		},
+		{
+			"listen": True
+		}
+	]
+}
+
+
+@app.route('/todo/api/v1.0/tasks', methods=['GET'])
+def get_tasks():
+    return jsonify({'tasks': tasks})
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 
 def get_output():
     joke = get_joke()

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebd086af-1ce4-4352-a36f-8ae454858d44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/new_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_server.py" afterDir="false" />
-    </list>
+    <list default="true" id="ebd086af-1ce4-4352-a36f-8ae454858d44" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +32,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Procfile" value="12" />
-          <entry key="py" value="440" />
+          <entry key="py" value="457" />
           <entry key="txt" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="72" />
-          <entry key="Python" value="440" />
+          <entry key="Python" value="457" />
         </counts>
       </usages-collector>
     </session>
@@ -51,12 +49,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="150">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1540152539598" expanded="true" signature="241:350" ph="..." />
-                <marker date="1540152539598" expanded="true" signature="440:445" ph="..." />
+                <marker date="1540152790725" expanded="true" signature="458:566" ph="..." />
+                <marker date="1540152790725" expanded="true" signature="635:640" ph="..." />
               </folding>
             </state>
           </provider>
@@ -194,16 +192,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -254,12 +251,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="150">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1540152539598" expanded="true" signature="241:350" ph="..." />
-            <marker date="1540152539598" expanded="true" signature="440:445" ph="..." />
+            <marker date="1540152790725" expanded="true" signature="458:566" ph="..." />
+            <marker date="1540152790725" expanded="true" signature="635:640" ph="..." />
           </folding>
         </state>
       </provider>
