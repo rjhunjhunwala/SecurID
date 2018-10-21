@@ -22,7 +22,7 @@ task = {
 
 @app.route('/', methods=['GET'])
 def get_tasks():
-    return jsonify({'tasks': task})
+    return jsonify(task)
 
 if __name__ == '__main__':
     app.run(debug=True)
