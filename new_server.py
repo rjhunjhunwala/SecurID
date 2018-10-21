@@ -24,6 +24,7 @@ def get_joke():
 @app.route('/<id>')
 def get_output(id):
     joke = get_joke()
-    joke = repr(joke)
-    out = "{\"actions\":[{\"say\":" +joke + "},{\"listen\":true]}"
+    joke.remove("\"")
+    joke = "\""+ joke + "\""
+    out = "{\"actions\":[{\"say\":" +joke + "},{\"listen\":true}]}"
     return out
