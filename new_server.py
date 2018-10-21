@@ -22,5 +22,5 @@ def get_joke():
 def get_output(id):
     joke = get_joke()
     joke = repr(joke)
-    out = "{\"actions\":[{\"say\":" +joke + "}]}"
+    out = "{\"actions\":[{\"say\":" +joke + "},{\"listen\":true]}"
     return out
