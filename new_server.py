@@ -20,8 +20,8 @@ task = {
 }
 
 
-@app.route('/', methods=['GET'])
-def get_tasks():
+@app.route('/')
+def start():
     return jsonify(task)
 
 if __name__ == '__main__':
