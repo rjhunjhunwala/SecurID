@@ -1,6 +1,5 @@
 #!flask/bin/python
-from flask import Flask, jsonify
-from flask_restful import Resource, Api
+from flask import Flask
 from random import randint
 app = Flask(__name__)
 api = Api(app)
@@ -22,20 +21,8 @@ task = {
 }
 
 
-class Sim(Resource):
-    def get(self):
-        return start()
-
-def start():
-    return jsonify(task)
-
-api.add_resource(Sim,"/")
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-
-def get_output():
+@app.route("/<id>")
+def get_output(id):
     joke = get_joke()
     joke = "\""+ joke + "\""
     out = "{\"actions\":[{\"say\":" +joke + "},{\"listen\":true}]}"
