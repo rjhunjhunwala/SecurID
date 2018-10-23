@@ -1,9 +1,7 @@
 #!flask/bin/python
 from flask import Flask, jsonify
-from flask_restful import Resource, Api
 from random import randint
 app = Flask(__name__)
-api = Api(app)
 
 def get_joke():
     jokes = open("jokes.txt", "r")
@@ -22,14 +20,9 @@ task = {
 }
 
 
-class Sim(Resource):
-    def get(self):
-        return start()
-
+@app.route('/')
 def start():
     return jsonify(task)
-
-api.add_resource(Sim)
 
 if __name__ == '__main__':
     app.run(debug=True)
