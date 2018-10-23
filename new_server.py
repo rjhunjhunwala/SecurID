@@ -2,6 +2,7 @@
 from flask import Flask
 from random import randint
 app = Flask(__name__)
+api = Api(app)
 
 def get_joke():
     jokes = open("jokes.txt", "r")
