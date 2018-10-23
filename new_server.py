@@ -29,7 +29,7 @@ class Sim(Resource):
 def start():
     return jsonify(task)
 
-api.add_resource(Sim,"/")
+api.add_resource(Sim,",")
 
 if __name__ == '__main__':
     app.run(debug=True)
