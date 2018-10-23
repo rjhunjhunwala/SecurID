@@ -1,2 +1,2 @@
-web: gunicorn new_server:app
+web: gunicorn web_crypto:app
 
